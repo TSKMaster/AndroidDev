@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	alert("Давайте разгадаем загадки!!!");
+
+	var rightAnswer = 0;
+	var wrongAnswer = 0;
+	
+	var answer1 = prompt("Зимой и летом - одним цветом");
+
+		if (answer1 == "Ёлка" || answer1 == "ёлка" || answer1 == "Елка" || answer1 == "елка" || answer1 == "ель" || answer1 == "сосна" || answer1 == "доллар" ) {
+			alert("Совершенно верно!!! Вы угадали!!!");
+			rightAnswer++;
+		} else {
+			alert("Ответ неверный");
+			wrongAnswer++;
+		}
+
+	var answer2 = prompt("Красна девица сидит в темнице, а коса на улице");
+
+		if (answer2 == "Морковка" || answer2 == "Морковь" || answer2 == "морковка" || answer2 == "морковь" ) {
+			alert("Совершенно верно!!! Вы угадали!!!");
+			rightAnswer++;
+		} else {
+			alert("Ответ неверный");
+			++wrongAnswer;
+		}
+
+	var answer3 = prompt("Сидит дед, во сто шуб одет. Кто его раздевает – тот слезы проливает.");
+
+		if (answer3 == "Лук" || answer3 == "лук" || answer3 == "Бомж" || answer3 == "бомж" ) {
+			alert("Совершенно верно!!! Вы угадали!!!");
+			rightAnswer++;
+		} else {
+			alert("Ответ неверный");
+			++wrongAnswer;
+		}
+
+	var answer4 = prompt("Сто одежек и все без застежек");
+
+		if (answer4 == "Капуста" || answer4 == "капуста") {
+			alert("Совершенно верно!!! Вы угадали!!!");
+			rightAnswer++;
+		} else {
+			alert("Ответ неверный. Игра окончена");
+			++wrongAnswer;
+		}
+
+	alert ("Правильных ответов: " + rightAnswer + " Неправильных ответов: " + wrongAnswer);
+
+
+
+</script>

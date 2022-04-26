@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	var answer = parseInt(Math.random() * 100);//случайное число от 0 до 100
+	
+	var userAnswer = +prompt("Угадайте число от 1 до 100");
+
+	while (userAnswer == answer) {
+		if (){
+			alert ("Вы угадали!!!");
+			break;
+		} else if (userAnswer > answer) {
+			alert("Загаданное число меньше!")
+		} else {
+			alert("Загаданное число больше!")
+		}
+		
+		userAnswer = +prompt("Попробуйте еще раз. Введите число от 1 до 100");
+	}
+
+
+</script>

@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	alert("Добро пожаловать в Пункт обмена валют!!!");
+
+	var usdRate = 76.05;
+	var eurRate = 87.1;
+	
+	alert("Курс доллара: " + usdRate);
+	alert("Курс евро: " + eurRate);
+
+	var rubCount = prompt("Какую сумму в рублях вы хотите обменять?");
+	
+
+	var result = rubCount / usdRate;
+	alert("Вы получите " + Math.floor(result*100)/100 + " долларов");
+
+	result = rubCount / eurRate;
+	alert("Вы получите " + Math.floor(result*100)/100 + " евро");	
+
+ // Math.floor(result*100)/100 - округляем до двух цифр после запятой
+
+
+</script>

@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	var answer = parseInt(Math.random() * 100);//случайное число от 0 до 100
+	
+	var user1Answer = +prompt("Игрок №1, угадайте число от 1 до 100");
+	var user2Answer = +prompt("Игрок №2, угадайте число от 1 до 100");
+
+	while(true){
+		if (user1Answer == answer){
+			alert("Игрок №1, Вы угадали!!!");
+			var exitCode = +prompt("Желаете продолжить игру? 1 - Да, 2 - нет");
+			if(exitCode == 1){
+				location.reload();//перезагружаем страницу 
+				break;
+			} else {
+				break;
+			}
+		} else if (user1Answer > answer) {
+			alert("Загаданное число меньше чем у игрока 1");
+		} else if(user1Answer < answer){
+			alert("Загаданное число больше чем у игрока 1");
+		}
+
+		if (user2Answer == answer){
+			alert("Игрок №2, Вы угадали!!!");
+			var exitCode = +prompt("Желаете продолжить игру? 1 - Да, 2 - нет");
+			if(exitCode == 1){
+				location.reload();//перезагружаем страницу 
+				break;
+			} else {
+				break;
+			}
+		} else if (user2Answer > answer) {
+			alert("Загаданное число меньше чем у игрока 2");
+		} else if(user2Answer < answer){
+			alert("Загаданное число больше чем у игрока 2");
+		}
+		
+		user1Answer = +prompt("Попробуйте еще раз. Игрок №1, введите число от 1 до 100");
+		user2Answer = +prompt("Попробуйте еще раз. Игрок №2, введите число от 1 до 100");
+		//break;
+	}
+
+
+</script>
